@@ -37,11 +37,13 @@ public class PlayerInput : MonoBehaviour {
         }
         Vector3 movement = new Vector3(speed, 0.0f, oldTurnVelo);
         rb.velocity = movement;
-        if(Input.GetKeyDown(buttonNameFire))
+        if(Input.GetButtonDown(buttonNameFire))
         {
+            Debug.Log("Hejsan");
             GetComponent<PowerUpHandler>().FirePowerUp();
+
         }
-        GetComponent<PowerUpHandler>().FirePowerUp();
+        //GetComponent<PowerUpHandler>().FirePowerUp();
 
     }
 }
