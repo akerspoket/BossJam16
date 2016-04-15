@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour {
     public float maxTurnSpeed = 1;
     public float turnDecay = 1;
     public string buttonName;
+    public string buttonNameFire;
     private Rigidbody rb;
 	// Use this for initialization
 	void Start ()
@@ -36,5 +37,11 @@ public class PlayerInput : MonoBehaviour {
         }
         Vector3 movement = new Vector3(speed, 0.0f, oldTurnVelo);
         rb.velocity = movement;
+        if(Input.GetKeyDown(buttonNameFire))
+        {
+            GetComponent<PowerUpHandler>().FirePowerUp();
+        }
+        GetComponent<PowerUpHandler>().FirePowerUp();
+
     }
 }
