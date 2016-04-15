@@ -7,7 +7,15 @@ public class CameraFocalPlacement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         players = GameObject.FindGameObjectsWithTag("Player");
-	}
+        int length = players.GetLength(0);
+        Vector3 position = Vector3.zero;
+        for (int i = 0; i < length; i++)
+        {
+            position += players[i].transform.position;
+        }
+        position /= length;
+        transform.position = position;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,7 +26,7 @@ public class CameraFocalPlacement : MonoBehaviour {
             position += players[i].transform.position;
         }
         position /= length;
-        position.y = transform.position.y;
+        //position.y = transform.position.y;
         transform.position = position;
 	}
 }
