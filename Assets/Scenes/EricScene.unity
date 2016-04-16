@@ -124,10 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
-      propertyPath: buttonNameFire
-      value: Fire1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -353,20 +349,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &2055977760 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 154804, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
-  m_PrefabInternal: {fileID: 38477535}
---- !u!114 &2055977767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2055977760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cf1194a869480f4c86813aa94b0077f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedUp: 100000000
-  speedDown: 1
