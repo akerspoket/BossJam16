@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PowerStripVisualResize : MonoBehaviour {
-    private GameObject groundPart;
+    public GameObject groundPart;
 
     public void SetGroundPart(GameObject part)
     {

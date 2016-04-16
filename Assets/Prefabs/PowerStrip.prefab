@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96fe93c57cf869a43acfd3a7f14b0205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstPlacedPowerPool: 0200000004000000
-  SecondPlacedPowerPool: 01000000020000000300000004000000
+  FirstPlacedPowerPool: 0200000003000000
+  SecondPlacedPowerPool: 020000000300000004000000
   ThirdPlacedPowerPool: 01000000020000000300000004000000
   FourthPlacedPowerPool: 010000000300000004000000
 --- !u!1001 &100100000

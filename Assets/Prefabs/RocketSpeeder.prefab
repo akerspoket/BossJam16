@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5000
-  heatSeekingFactor: 10
+  heatSeekingFactor: 30
 --- !u!135 &13568240
 SphereCollider:
   m_ObjectHideFlags: 1
