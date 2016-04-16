@@ -450,6 +450,14 @@ Prefab:
       propertyPath: m_Name
       value: PlayerWheel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2344360, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dfb8076dd29a17440961f28c10f43402, type: 2}
+    - target: {fileID: 3321832, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
