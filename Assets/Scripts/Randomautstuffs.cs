@@ -105,7 +105,19 @@ public class Randomautstuffs : MonoBehaviour {
             {
                 break;
             }
-            Instantiate(powerStrip, new Vector3(x, 0, 0), Quaternion.identity);
+            GameObject newStripe = Instantiate(powerStrip);
+            newStripe.transform.position = new Vector3(x, 1, 0);
+            PowerStripVisualResize resizeVisual = newStripe.GetComponentInChildren<PowerStripVisualResize>();
+            if (resizeVisual != null)
+            {
+                resizeVisual.SetGroundPart(spelPlan);
+                resizeVisual.ResizeToFitGround();
+            }
+            else
+            {
+                Debug.Log("The power stripe didnt have a script in child...");
+            }
+
         }
     }
 }
