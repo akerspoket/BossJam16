@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11425504}
   - 114: {fileID: 11462260}
   - 114: {fileID: 11423510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerWheel
   m_TagString: Player
   m_Icon: {fileID: 0}
