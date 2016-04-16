@@ -74,6 +74,6 @@ public class PlayerInput : MonoBehaviour {
         }
         //GetComponent<PowerUpHandler>().FirePowerUp();
 
-        Debug.Log(rb.velocity.x);
+        // Debug.Log(rb.velocity.x);
     }
 }
