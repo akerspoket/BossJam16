@@ -132,10 +132,10 @@ MonoBehaviour:
   pupDisplay: {fileID: 0}
   powerUpSprites:
   - {fileID: 21300000, guid: c700062fffa696c47ad3d7dfc059c0fc, type: 3}
-  - {fileID: 21300000, guid: a04b6ea28b07a2841968e40553be8af3, type: 3}
-  - {fileID: 21300000, guid: f1a28bfae88419d4d91ad09494b9d69f, type: 3}
-  - {fileID: 21300000, guid: 6a199eb8ca819904aab69a0dd7c21bb2, type: 3}
-  - {fileID: 21300000, guid: c06078ab7a5effe4582fdc45318e88b1, type: 3}
+  - {fileID: 21300000, guid: 761c899fc530a83458482593c7a3c2ed, type: 3}
+  - {fileID: 21300000, guid: c9fec4e1e302ceb41adfb3f8aec0a993, type: 3}
+  - {fileID: 21300000, guid: dd2b3ad481ec497439583bfbd502e5b4, type: 3}
+  - {fileID: 21300000, guid: b4a2e9c7f51f5124da09839051e9d9e1, type: 3}
 --- !u!136 &13634470
 CapsuleCollider:
   m_ObjectHideFlags: 1
