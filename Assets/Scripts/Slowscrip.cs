@@ -4,6 +4,7 @@ using System.Collections;
 public class Slowscrip : MonoBehaviour {
     public float slowFactor;
     public float maxSlow;
+    public float amplitude;
 	// Use this for initialization
     void OnTriggerStay(Collider player)
     {
@@ -13,9 +14,13 @@ public class Slowscrip : MonoBehaviour {
             playerRB.AddForce(new Vector3(-1,0,0) * slowFactor * Time.deltaTime);
         }
     }
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider Player)
     {
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
+        if (Player.CompareTag("Player"))
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.volume = amplitude;
+            audio.Play();
+        }
     }
 }

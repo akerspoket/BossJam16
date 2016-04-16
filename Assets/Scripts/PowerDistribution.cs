@@ -41,6 +41,12 @@ public class PowerDistribution : MonoBehaviour {
                 }
                 playersVisited.Add(unit.gameObject);
             }
+            AudioSource audio = GetComponent<AudioSource>();
+            if (!audio.isPlaying)
+            {
+                audio.Play();
+
+            }
         }
     }
 
