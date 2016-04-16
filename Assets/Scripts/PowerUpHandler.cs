@@ -54,8 +54,10 @@ public class PowerUpHandler : MonoBehaviour {
         else if(powerUpInt==4)
         {
             GameObject t_slowRocket = Instantiate(slowRocket);
-            t_slowRocket.transform.position = transform.position + (transform.forward * 5);
-            t_slowRocket.transform.GetComponent<Rigidbody>().AddForce(transform.forward * 100);
+            t_slowRocket.transform.position = transform.position + (transform.forward);
+            t_slowRocket.transform.GetComponent<Rigidbody>().AddForce(transform.forward);
+            t_slowRocket.GetComponent<RocketHitScript>().SetIgnoreTarget(this.gameObject);
+            powerUpInt = 0;
             //SlowRocket
         }
         SetPowerUp(0);
