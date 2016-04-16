@@ -17,8 +17,8 @@ public class Randomautstuffs : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        //RandomiseOil();
-        //RandomiseSpeed();
+        RandomiseOil();
+        RandomiseSpeed();
         RandomisePowerStrips();
     }
 
