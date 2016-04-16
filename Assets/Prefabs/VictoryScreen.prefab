@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 491864}
+  m_Layer: 0
+  m_Name: CameraTransformPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &130012
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,7 +64,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &157514
 GameObject:
   m_ObjectHideFlags: 1
@@ -117,6 +132,7 @@ Transform:
   - {fileID: 444230}
   - {fileID: 449236}
   - {fileID: 482504}
+  - {fileID: 491864}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &441756
@@ -181,6 +197,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444230}
   m_RootOrder: 1
+--- !u!4 &491864
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115958}
+  m_LocalRotation: {x: 0.3033995, y: -0.11188536, z: 0.0381839, w: 0.94550115}
+  m_LocalPosition: {x: 1.14, y: 4.65, z: -4.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414570}
+  m_RootOrder: 3
 --- !u!20 &2055714
 Camera:
   m_ObjectHideFlags: 1
