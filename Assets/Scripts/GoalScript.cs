@@ -21,8 +21,7 @@ public class GoalScript : MonoBehaviour
         {
             winner.gameObject.transform.Rotate(new Vector3(0.0f, 0.0f, 1*Time.deltaTime*rotationSpeed));
             timeToMainMenu -= Time.deltaTime;
-            string buttonName = winner.GetComponent<PlayerInput>().buttonNameFire;
-            if (timeToMainMenu < 0 || Input.GetKeyDown(buttonName))
+            if (timeToMainMenu < 0)
             {
                 SceneManager.LoadScene("MainMenu");
             }
