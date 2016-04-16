@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowFactor: 1000
-  maxSlow: 5
+  maxSlow: 4
   amplitude: 1
 --- !u!114 &11435180
 MonoBehaviour:

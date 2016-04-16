@@ -2062,6 +2062,10 @@ Prefab:
       propertyPath: endMarker
       value: 
       objectReference: {fileID: 727302659}
+    - target: {fileID: 455836, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
   m_IsPrefabParent: 0
