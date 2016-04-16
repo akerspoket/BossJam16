@@ -5,7 +5,7 @@ public class SpeedScript : MonoBehaviour {
     public float speedFactor;
 	void OnTriggerStay(Collider player)
     {
-        player.GetComponent<Rigidbody>().AddForce(Vector3.right * speedFactor, ForceMode.Acceleration);
+        player.GetComponent<Rigidbody>().AddForce(new Vector3(1,0,0) * speedFactor, ForceMode.Acceleration);
     }
     void OnTriggerEnter()
     {

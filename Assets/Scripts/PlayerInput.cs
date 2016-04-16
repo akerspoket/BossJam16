@@ -53,7 +53,7 @@ public class PlayerInput : MonoBehaviour {
             {
                 GetComponent<PowerUpHandler>().FirePowerUp();
             }
-            rb.angularVelocity = new Vector3(0, 0, -rb.velocity.x * angularVelocityFactor);
+            gameObject.transform.FindChild("MeshHolder").GetComponent<Transform>().Rotate(0, -rb.velocity.x * angularVelocityFactor, 0 );
         }
 
     }
