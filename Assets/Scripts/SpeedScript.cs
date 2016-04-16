@@ -10,6 +10,6 @@ public class SpeedScript : MonoBehaviour {
     void OnTriggerEnter()
     {
         AudioSource audio = GetComponent<AudioSource>();
-        audio.Play(44100);
+        audio.Play();
     }
 }

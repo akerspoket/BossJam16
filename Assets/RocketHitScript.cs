@@ -39,6 +39,7 @@ public class RocketHitScript : MonoBehaviour {
         if (Player.CompareTag("Player") && Player.gameObject != ignoredPlayer)
         {
             Player.transform.GetComponent<Rigidbody>().AddForce(new Vector3(force, 0.0f, 0.0f));
+            Player.gameObject.GetComponent<AudioSource>().Play();
             Destroy(this.gameObject);
         }
     }
