@@ -31,6 +31,8 @@ public class RocketHitScript : MonoBehaviour {
         }
 
         transform.GetComponent<Rigidbody>().AddForce(vecBetweenMeAndTarget * heatSeekingFactor);
+        transform.LookAt(transform.position - vecBetweenMeAndTarget);
+        transform.Rotate(90, 0, 0);
     }
     void OnTriggerEnter(Collider Player)
     {
