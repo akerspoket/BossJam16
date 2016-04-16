@@ -6,7 +6,7 @@ public class ButtonEffect : MonoBehaviour {
     public string sceneToLoad;
     public bool Exit = false;
     // Use this for initialization
-    void LoadTheScene()
+    public void LoadTheScene()
     {
         if (Exit)
         {
