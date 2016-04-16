@@ -2088,7 +2088,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 406720, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}
       propertyPath: m_LocalScale.z
-      value: 75.10339
+      value: 16.529423
       objectReference: {fileID: 0}
     - target: {fileID: 6585616, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}
       propertyPath: m_Size.y
