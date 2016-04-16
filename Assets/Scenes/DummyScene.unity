@@ -1141,7 +1141,7 @@ Prefab:
     - target: {fileID: 11462260, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: pupDisplay
       value: 
-      objectReference: {fileID: 884793085}
+      objectReference: {fileID: 244210454}
     - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: buttonName
       value: Horizontal3
@@ -1692,7 +1692,7 @@ Prefab:
     - target: {fileID: 11462260, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: pupDisplay
       value: 
-      objectReference: {fileID: 1616859218}
+      objectReference: {fileID: 884793085}
     - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: buttonName
       value: Horizontal2
@@ -2155,7 +2155,7 @@ Prefab:
     - target: {fileID: 11462260, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: pupDisplay
       value: 
-      objectReference: {fileID: 244210454}
+      objectReference: {fileID: 1616859218}
     - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: buttonName
       value: Horizontal4
