@@ -990,6 +990,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &727302659 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 451420, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}
+  m_PrefabInternal: {fileID: 1520824209}
 --- !u!1 &791583579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,34 +2040,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 2363536, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2385044, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_ReceiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2385044, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 455836, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 7.576756
-      objectReference: {fileID: 0}
-    - target: {fileID: 455836, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -21.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 477534, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 8.942792
-      objectReference: {fileID: 0}
-    - target: {fileID: 477534, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 22.3
-      objectReference: {fileID: 0}
+    - target: {fileID: 11430768, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
+      propertyPath: endMarker
+      value: 
+      objectReference: {fileID: 727302659}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09e0cee4cf77a444b8604262bc0c7eac, type: 2}
   m_IsPrefabParent: 0
@@ -2113,6 +2093,10 @@ Prefab:
     - target: {fileID: 6585616, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}
       propertyPath: m_Size.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432972, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}
+      propertyPath: timeToMainMenu
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 936ca2b2c454c7646b97171f632590bd, type: 2}

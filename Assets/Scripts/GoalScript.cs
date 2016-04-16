@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GoalScript : MonoBehaviour
 {
@@ -7,7 +8,9 @@ public class GoalScript : MonoBehaviour
     private int offSetCounter = 0;
     public bool itIsDone = false;
     public float rotationSpeed = 1.0f;
+    public float timeToMainMenu;
     private GameObject winner;
+
     public bool IsItDoneFunc()
     {
         return itIsDone;
@@ -17,6 +20,12 @@ public class GoalScript : MonoBehaviour
         if(itIsDone)
         {
             winner.gameObject.transform.Rotate(new Vector3(0.0f, 0.0f, 1*Time.deltaTime*rotationSpeed));
+            timeToMainMenu -= Time.deltaTime;
+            string buttonName = winner.GetComponent<PlayerInput>().buttonNameFire;
+            if (timeToMainMenu < 0 || Input.GetKeyDown(buttonName))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
     }
     void OnTriggerEnter(Collider other)
