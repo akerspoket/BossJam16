@@ -44,12 +44,11 @@ public class Randomautstuffs : MonoBehaviour {
             z = Random.value;
             // Y ska vara statisk förmodligen men låter koden va kvar ifall vi vill
             
-            y = 0.15f;
             Vector3 scale = spelPlan.transform.localScale;
             scale = new Vector3(scale.x / 2, scale.y / 2, scale.z / 2);
             x = x * scale.x;
             z = z * scale.z;
-
+            y = 0.13f + (0.02f * y);
             if ((x + xValue) > scale.x)
             {
                 x = scale.x - xValue;
@@ -73,16 +72,13 @@ public class Randomautstuffs : MonoBehaviour {
                 {
                     x *= positive;
                 }
-                else if (j == 1)
-                {
-                    y *= positive;
-                }
                 else if (j == 2)
                 {
                     z *= positive;
                 }
             }
-            t_oilObject.transform.position = new Vector3(x, 0.15f, z);
+
+            t_oilObject.transform.position = new Vector3(x, y, z);
 
         }
         for (int i = 0; i < numberOfSpeedBoosts; i++)
@@ -122,6 +118,7 @@ public class Randomautstuffs : MonoBehaviour {
             scale = new Vector3(scale.x / 2, scale.y / 2, scale.z / 2);
             x = x * scale.x;
             z = z * scale.z;
+            y = 0.13f + (0.02f * y);
 
             if ((x + xValue) > scale.x)
             {
@@ -146,16 +143,12 @@ public class Randomautstuffs : MonoBehaviour {
                 {
                     x *= positive;
                 }
-                else if (j == 1)
-                {
-                    y *= positive;
-                }
                 else if (j == 2)
                 {
                     z *= positive;
                 }
             }
-            t_speedBoostObject.transform.position = new Vector3(x, 0.15f, z);
+            t_speedBoostObject.transform.position = new Vector3(x, y, z);
         }
     }
 	
