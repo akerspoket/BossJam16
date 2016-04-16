@@ -14,6 +14,7 @@ GameObject:
   - 54: {fileID: 5479694}
   - 114: {fileID: 11425504}
   - 114: {fileID: 11462260}
+  - 114: {fileID: 11423510}
   m_Layer: 0
   m_Name: PlayerWheel
   m_TagString: Player
@@ -81,6 +82,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &11423510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c12bf15e2b9794a94ccf132fa01b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 0
 --- !u!114 &11425504
 MonoBehaviour:
   m_ObjectHideFlags: 1

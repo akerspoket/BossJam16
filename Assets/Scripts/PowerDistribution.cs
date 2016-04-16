@@ -12,8 +12,7 @@ public class PowerDistribution : MonoBehaviour {
     // Use this for initialization
     void Start () {
 	}
-
-    // Update is called once per frame
+    
     void OnTriggerEnter(Collider unit)
     {
         if (unit.CompareTag("Player"))
@@ -35,12 +34,12 @@ public class PowerDistribution : MonoBehaviour {
                 {
                     int powerToGive = PowerToGive(placement.place);
                     puphandler.SetPowerUp(powerToGive);
-                    //Debug.Log("Player got power" + powerToGive.ToString());
                 }
                 else
                 {
                     Debug.Log("A unit with tag player didnt have a pup handler");
                 }
+                playersVisited.Add(unit.gameObject);
             }
         }
     }
