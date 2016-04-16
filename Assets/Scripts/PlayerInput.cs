@@ -6,6 +6,8 @@ public class PlayerInput : MonoBehaviour {
     public float turnSpeed = 1;
     public float maxTurnSpeed = 1;
     public float turnDecay = 1;
+    public float retardation = 1;
+    public float acceleration = 1;
     public string buttonName;
     public string buttonNameFire;
     private Rigidbody rb;
@@ -13,12 +15,16 @@ public class PlayerInput : MonoBehaviour {
 	void Start ()
     {
         rb = GetComponent<Rigidbody>();
-	}
+        Vector3 movement = new Vector3(speed, 0.0f, 0.0f);
+        rb.velocity = movement;
+
+    }
 	
     void FixedUpdate()
     {
         float turn = Input.GetAxis(buttonName)*-1;
         float oldTurnVelo = rb.velocity.z;
+        float oldForwVelo = rb.velocity.x;
         if(rb.velocity.z < -maxTurnSpeed && turn < 0)
         {
             // gör inte ett piss ditt groggluder
@@ -35,8 +41,31 @@ public class PlayerInput : MonoBehaviour {
         {
             rb.AddForce(new Vector3(0.0f, 0.0f, -rb.velocity.z * turnDecay * Time.deltaTime));
         }
-        Vector3 movement = new Vector3(speed, 0.0f, oldTurnVelo);
-        rb.velocity = movement;
+        //Vector3 movement = new Vector3(speed, 0.0f, oldTurnVelo);
+
+        //if (oldForwVelo == speed)
+        //{
+        //    //inget
+        //    Debug.Log("Inget");
+        //}
+        //else if(oldForwVelo > speed)
+        //{
+        //    movement = new Vector3(oldForwVelo * retardation, 0.0f, oldTurnVelo);
+        //    Debug.Log("slowing down");
+        //}
+        //else if(oldForwVelo < speed)
+        //{
+        //    movement = new Vector3(oldForwVelo * acceleration, 0.0f, oldTurnVelo);
+        //    Debug.Log("accelerating");
+        //}
+        //Vector3 movement = new Vector3(oldForwVelo, 0.0f, oldTurnVelo);
+
+        Vector3 movement = new Vector3(acceleration, 0.0f, 0.0f);
+        //Vector3 deAcc = new Vector3( -retardation * oldForwVelo, 0.0f, 0.0f);
+
+        rb.AddForce(movement);
+        //rb.AddForce(deAcc);
+        //rb.velocity = movement;
         if(Input.GetButtonDown(buttonNameFire))
         {
             Debug.Log("Hejsan");
@@ -45,5 +74,6 @@ public class PlayerInput : MonoBehaviour {
         }
         //GetComponent<PowerUpHandler>().FirePowerUp();
 
+        Debug.Log(rb.velocity.x);
     }
 }
