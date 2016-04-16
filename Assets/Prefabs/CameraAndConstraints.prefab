@@ -28,7 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 470610}
   - 114: {fileID: 11423040}
-  - 114: {fileID: 11461746}
+  - 114: {fileID: 11430768}
   m_Layer: 0
   m_Name: CameraAndConstraints
   m_TagString: Untagged
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryScreenTime: 0
---- !u!114 &11461746
+--- !u!114 &11430768
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
