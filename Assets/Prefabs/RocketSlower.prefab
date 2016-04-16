@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67bf3db4a3c07b94495837f38f8af491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: -50
+  force: -5000
   heatSeekingFactor: 10
 --- !u!135 &13527348
 SphereCollider:
