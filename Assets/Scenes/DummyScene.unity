@@ -795,6 +795,14 @@ Prefab:
       propertyPath: pupDisplay
       value: 
       objectReference: {fileID: 884793085}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonName
+      value: Horizontal3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameFire
+      value: Fire3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -1021,6 +1029,14 @@ Prefab:
       propertyPath: pupDisplay
       value: 
       objectReference: {fileID: 1616859218}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonName
+      value: Horizontal2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameFire
+      value: Fire2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -1319,6 +1335,14 @@ Prefab:
       propertyPath: pupDisplay
       value: 
       objectReference: {fileID: 244210454}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonName
+      value: Horizontal4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameFire
+      value: Fire4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
