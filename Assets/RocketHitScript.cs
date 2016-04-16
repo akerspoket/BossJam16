@@ -40,6 +40,8 @@ public class RocketHitScript : MonoBehaviour {
         {
             Player.transform.GetComponent<Rigidbody>().AddForce(new Vector3(force, 0.0f, 0.0f));
             Player.gameObject.GetComponent<AudioSource>().Play();
+            Player.gameObject.transform.FindChild("EldBoll").GetComponent<ParticleSystem>().Play();
+
             Destroy(this.gameObject);
         }
     }
