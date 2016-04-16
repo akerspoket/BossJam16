@@ -55,12 +55,13 @@ public class PlayerInput : MonoBehaviour {
             }
             gameObject.transform.FindChild("MeshHolder").GetComponent<Transform>().Rotate(0, -rb.velocity.x * angularVelocityFactor, 0 );
         }
-
     }
     public void StopMoving()
     {
         stopMovingBool = true;
         rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
+        GetComponentInChildren<Light>().enabled = false;
+        GetComponent<Placement>().enabled = false;
     }
     public void StartMoving()
     {
