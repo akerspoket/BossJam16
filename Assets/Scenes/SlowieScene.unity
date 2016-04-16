@@ -130,11 +130,11 @@ Prefab:
       objectReference: {fileID: 758183938}
     - target: {fileID: 11464094, guid: 2beae88a6beb1cb4ead26f0374c913e2, type: 2}
       propertyPath: numberOfOils
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11464094, guid: 2beae88a6beb1cb4ead26f0374c913e2, type: 2}
       propertyPath: numberOfSpeedBoosts
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2beae88a6beb1cb4ead26f0374c913e2, type: 2}

@@ -7,4 +7,9 @@ public class SpeedScript : MonoBehaviour {
     {
         player.GetComponent<Rigidbody>().AddForce(Vector3.right * speedFactor, ForceMode.Acceleration);
     }
+    void OnTriggerEnter()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play(44100);
+    }
 }

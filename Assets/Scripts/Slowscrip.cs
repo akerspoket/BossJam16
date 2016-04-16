@@ -13,4 +13,9 @@ public class Slowscrip : MonoBehaviour {
             playerRB.AddForce(-player.transform.right * slowFactor * Time.deltaTime);
         }
     }
+    void OnTriggerEnter()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play(44100);
+    }
 }
