@@ -10,8 +10,19 @@ public class Randomautstuffs : MonoBehaviour {
     public GameObject speedBoostObject;
     public GameObject spelPlan;
     public float density;
+    public GameObject powerStrip;
+    public float minDistanceBetweenStrips;
+    public float maxDistanceBetweenStrips;
+    public float firstPossiblePowerStrip;
 	// Use this for initialization
 	void Start ()
+    {
+        //RandomiseOil();
+        //RandomiseSpeed();
+        RandomisePowerStrips();
+    }
+
+    private void RandomiseOil()
     {
         for (int i = 0; i < numberOfOils; i++)
         {
@@ -43,7 +54,7 @@ public class Randomautstuffs : MonoBehaviour {
             y = Random.value;
             z = Random.value;
             // Y ska vara statisk förmodligen men låter koden va kvar ifall vi vill
-            
+
             Vector3 scale = spelPlan.transform.localScale;
             scale = new Vector3(scale.x / 2, scale.y / 2, scale.z / 2);
             x = x * scale.x;
@@ -81,6 +92,10 @@ public class Randomautstuffs : MonoBehaviour {
             t_oilObject.transform.position = new Vector3(x, y, z);
 
         }
+    }
+
+    private void RandomiseSpeed()
+    {
         for (int i = 0; i < numberOfSpeedBoosts; i++)
         {
             // Set Scale
@@ -151,9 +166,27 @@ public class Randomautstuffs : MonoBehaviour {
             t_speedBoostObject.transform.position = new Vector3(x, y, z);
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    private void RandomisePowerStrips()
+    {
+        // first is special case
+        float banaStartX = spelPlan.transform.position.x - spelPlan.transform.localScale.x / 2;
+        float banaEndX = spelPlan.transform.position.x + spelPlan.transform.localScale.x / 2;
+        float x = Random.Range(banaStartX + firstPossiblePowerStrip, banaStartX + maxDistanceBetweenStrips);
+        if (x > banaEndX)
+        {
+            return;
+        }
+        Instantiate(powerStrip, new Vector3(x, 0, 0), Quaternion.identity);
+
+        while (true)
+        {
+            x = Random.Range(x + minDistanceBetweenStrips, x + maxDistanceBetweenStrips);
+            if (x > banaEndX)
+            {
+                break;
+            }
+            Instantiate(powerStrip, new Vector3(x, 0, 0), Quaternion.identity);
+        }
+    }
 }

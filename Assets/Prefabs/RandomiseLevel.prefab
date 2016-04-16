@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &148990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 447078}
+  - 114: {fileID: 11464094}
+  m_Layer: 0
+  m_Name: RandomiseLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447078
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -71.72832, y: 3.2166934, z: 5.3161902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11464094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ea3222d7c388f4c950305d048c2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minObjectSize: 0.2
+  maxObjectSize: 2
+  numberOfOils: 40
+  numberOfSpeedBoosts: 50
+  oilObject: {fileID: 154108, guid: 9e223a4b0f030aa42b30e76a8ca62203, type: 2}
+  speedBoostObject: {fileID: 163854, guid: f9f558b5e5da1ef4fb19ffc63a04f008, type: 2}
+  spelPlan: {fileID: 0}
+  density: 0
+  powerStrip: {fileID: 177510, guid: ecb4bf059fbc17f44ab238023627fe72, type: 2}
+  minDistanceBetweenStrips: 10
+  maxDistanceBetweenStrips: 40
+  firstPossiblePowerStrip: 10
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 148990}
+  m_IsPrefabParent: 1
