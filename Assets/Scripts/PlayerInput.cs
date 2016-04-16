@@ -10,7 +10,7 @@ public class PlayerInput : MonoBehaviour {
     public float acceleration = 1;
     public string buttonName;
     public string buttonNameFire;
-    private bool stopMovingBool = false;
+    private bool stopMovingBool = true;
     public float angularVelocityFactor;
     private Rigidbody rb;
 	// Use this for initialization
@@ -58,8 +58,12 @@ public class PlayerInput : MonoBehaviour {
 
     }
     public void StopMoving()
-        {
-            stopMovingBool = true;
-            rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
-        }
+    {
+        stopMovingBool = true;
+        rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
     }
+    public void StartMoving()
+    {
+        stopMovingBool = false;
+    }
+}
