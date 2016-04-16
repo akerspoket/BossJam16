@@ -49,13 +49,19 @@ public class PlayerInput : MonoBehaviour {
             Vector3 movement = new Vector3(acceleration * Time.deltaTime, 0.0f, 0.0f);
 
             rb.AddForce(movement);
-            if (Input.GetButtonDown(buttonNameFire))
-            {
-                GetComponent<PowerUpHandler>().FirePowerUp();
-            }
+
             gameObject.transform.FindChild("MeshHolder").GetComponent<Transform>().Rotate(0, -rb.velocity.x * angularVelocityFactor, 0 );
         }
     }
+
+    void Update()
+    {
+        if (Input.GetButtonDown(buttonNameFire))
+        {
+            GetComponent<PowerUpHandler>().FirePowerUp();
+        }
+    }
+
     public void StopMoving()
     {
         stopMovingBool = true;
