@@ -45,7 +45,7 @@ public class PlayerInput : MonoBehaviour {
                 rb.AddForce(new Vector3(0.0f, 0.0f, -rb.velocity.z * turnDecay * Time.deltaTime));
             }
 
-            Vector3 movement = new Vector3(acceleration, 0.0f, 0.0f);
+            Vector3 movement = new Vector3(acceleration * Time.deltaTime, 0.0f, 0.0f);
 
             rb.AddForce(movement);
             if (Input.GetButtonDown(buttonNameFire))

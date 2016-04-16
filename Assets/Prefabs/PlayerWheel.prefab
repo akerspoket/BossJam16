@@ -110,7 +110,7 @@ MonoBehaviour:
   maxTurnSpeed: 8
   turnDecay: 100
   retardation: 0.9
-  acceleration: 6
+  acceleration: 1000
   buttonName: Horizontal1
   buttonNameFire: Fire1
 --- !u!114 &11462260
