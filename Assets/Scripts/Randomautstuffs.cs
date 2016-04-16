@@ -45,7 +45,7 @@ public class Randomautstuffs : MonoBehaviour {
             // Y ska vara statisk förmodligen men låter koden va kvar ifall vi vill
 
             Vector3 scale = spelPlan.transform.localScale;
-            Debug.Log(scale);
+            //Debug.Log(scale);
             scale = new Vector3(scale.x / 2, scale.y / 2, scale.z / 2);
 
             y = 0.5f + (0.02f * y);

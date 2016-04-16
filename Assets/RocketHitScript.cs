@@ -38,7 +38,7 @@ public class RocketHitScript : MonoBehaviour {
     {
         if (Player.CompareTag("Player"))
         {
-            Debug.Log("PlayerCollided");
+            //Debug.Log("PlayerCollided");
             Player.transform.GetComponent<Rigidbody>().AddForce(new Vector3(force, 0.0f, 0.0f));
         }
     }

@@ -35,7 +35,7 @@ public class PowerDistribution : MonoBehaviour {
                 {
                     int powerToGive = PowerToGive(placement.place);
                     puphandler.SetPowerUp(powerToGive);
-                    Debug.Log("Player got power" + powerToGive.ToString());
+                    //Debug.Log("Player got power" + powerToGive.ToString());
                 }
                 else
                 {

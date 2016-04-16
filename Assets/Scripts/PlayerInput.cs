@@ -68,7 +68,7 @@ public class PlayerInput : MonoBehaviour {
         //rb.velocity = movement;
         if(Input.GetButtonDown(buttonNameFire))
         {
-            Debug.Log("Hejsan");
+            //Debug.Log("Hejsan");
             GetComponent<PowerUpHandler>().FirePowerUp();
 
         }
