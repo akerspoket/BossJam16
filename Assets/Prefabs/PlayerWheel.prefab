@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11425504}
   - 114: {fileID: 11462260}
   - 114: {fileID: 11423510}
+  - 114: {fileID: 11420736}
   m_Layer: 0
   m_Name: PlayerWheel
   m_TagString: Player
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154804}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -76.263794, y: 0.6200981, z: -0.37453413}
+  m_LocalPosition: {x: -52.4291, y: 1.05, z: 2.2290955}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +83,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &11420736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c12bf15e2b9794a94ccf132fa01b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 0
 --- !u!114 &11423510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +141,13 @@ MonoBehaviour:
   speedDown: 1
   speedRocket: {fileID: 110522, guid: e8d865ff910741b4f98de79af7a53ab0, type: 2}
   slowRocket: {fileID: 120372, guid: f713c962696939f4fb3c273ab82411e3, type: 2}
+  pupDisplay: {fileID: 0}
+  powerUpSprites:
+  - {fileID: 21300000, guid: c700062fffa696c47ad3d7dfc059c0fc, type: 3}
+  - {fileID: 21300000, guid: a04b6ea28b07a2841968e40553be8af3, type: 3}
+  - {fileID: 21300000, guid: f1a28bfae88419d4d91ad09494b9d69f, type: 3}
+  - {fileID: 21300000, guid: 6a199eb8ca819904aab69a0dd7c21bb2, type: 3}
+  - {fileID: 21300000, guid: c06078ab7a5effe4582fdc45318e88b1, type: 3}
 --- !u!136 &13634470
 CapsuleCollider:
   m_ObjectHideFlags: 1
