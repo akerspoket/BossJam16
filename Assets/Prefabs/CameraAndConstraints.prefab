@@ -28,6 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 470610}
   - 114: {fileID: 11423040}
+  - 114: {fileID: 11461746}
   m_Layer: 0
   m_Name: CameraAndConstraints
   m_TagString: Untagged
@@ -303,6 +304,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d783fc8ec4a8cab4f9f33f28307ad698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryScreenTime: 0
+--- !u!114 &11461746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccde2c9c4beda949abb29589b820747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMarker: {fileID: 490800}
+  endMarker: {fileID: 0}
+  speed: 4
 --- !u!124 &12479140
 Behaviour:
   m_ObjectHideFlags: 1
