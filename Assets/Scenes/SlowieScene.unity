@@ -134,7 +134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11464094, guid: 2beae88a6beb1cb4ead26f0374c913e2, type: 2}
       propertyPath: numberOfSpeedBoosts
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2beae88a6beb1cb4ead26f0374c913e2, type: 2}
@@ -220,7 +220,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 434990132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: -33.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -404,6 +404,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8176dffc15ec3f444acd73eb96d10487, type: 2}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: angularVelocityFactor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -458,6 +466,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0

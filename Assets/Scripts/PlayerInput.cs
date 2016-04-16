@@ -11,6 +11,7 @@ public class PlayerInput : MonoBehaviour {
     public string buttonName;
     public string buttonNameFire;
     private bool stopMovingBool = false;
+    public float angularVelocityFactor;
     private Rigidbody rb;
 	// Use this for initialization
 	void Start ()
@@ -51,8 +52,8 @@ public class PlayerInput : MonoBehaviour {
             if (Input.GetButtonDown(buttonNameFire))
             {
                 GetComponent<PowerUpHandler>().FirePowerUp();
-
             }
+            rb.angularVelocity = new Vector3(0, 0, -rb.velocity.x * angularVelocityFactor);
         }
 
     }

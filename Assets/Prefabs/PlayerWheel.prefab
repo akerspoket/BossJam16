@@ -113,6 +113,7 @@ MonoBehaviour:
   acceleration: 1000
   buttonName: Horizontal1
   buttonNameFire: Fire1
+  angularVelocityFactor: 1
 --- !u!114 &11462260
 MonoBehaviour:
   m_ObjectHideFlags: 1
