@@ -21,8 +21,8 @@ public class MenuSelection : MonoBehaviour {
         {
             ChangeSelection(currentlySelected + 1);
         }
-        if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2")
-            || Input.GetButtonDown("Fire3") || Input.GetButtonDown("Fire4"))
+        if (Input.GetButtonDown("Jump1") || Input.GetButtonDown("Jump2")
+            || Input.GetButtonDown("Jump3") || Input.GetButtonDown("Jump4"))
         {
             buttons[currentlySelected].GetComponent<ButtonEffect>().LoadTheScene();
         }
