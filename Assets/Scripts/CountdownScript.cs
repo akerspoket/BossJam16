@@ -29,6 +29,7 @@ public class CountdownScript : MonoBehaviour {
             {
                 players[i].GetComponent<PlayerInput>().StartMoving();
                 players[i].GetComponent<CapsuleCollider>().enabled = true;
+                players[i].GetComponent<Rigidbody>().useGravity = true;
             }
         }
         imageDisplay.sprite = countdownTextures[imageToDisplay];

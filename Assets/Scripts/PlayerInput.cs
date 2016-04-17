@@ -12,6 +12,9 @@ public class PlayerInput : MonoBehaviour {
     public string buttonNameFire;
     private bool stopMovingBool = true;
     public float angularVelocityFactor;
+    public float coolDownJump = 1;
+    private float timeSinceLastJump;
+    private float timeElapsed;
     private Rigidbody rb;
 	// Use this for initialization
 	void Start ()
@@ -29,6 +32,7 @@ public class PlayerInput : MonoBehaviour {
             float turn = Input.GetAxis(buttonName) * -1;
             float oldTurnVelo = rb.velocity.z;
             float oldForwVelo = rb.velocity.x;
+            timeElapsed += Time.deltaTime;
             if (rb.velocity.z < -maxTurnSpeed && turn < 0)
             {
                 // gör inte ett piss ditt groggluder
@@ -50,6 +54,13 @@ public class PlayerInput : MonoBehaviour {
 
             rb.AddForce(movement);
 
+            if (Input.GetButtonDown(buttonNameFire) && timeElapsed > coolDownJump)
+            {
+                timeElapsed = 0;
+                //timeSinceLastJump = Time.time - timeElapsed;
+                Vector3 jump = new Vector3(0.0f, 300.0f, 0.0f);
+                rb.AddForce(jump);
+            }
             gameObject.transform.FindChild("MeshHolder").GetComponent<Transform>().Rotate(0, -rb.velocity.x * angularVelocityFactor, 0 );
         }
     }

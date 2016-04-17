@@ -211,7 +211,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 166891290}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c5f1e1496289dc24583443b2fcfff9ac, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -274,22 +274,6 @@ Prefab:
     - target: {fileID: 478802, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326944, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309754, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11436534, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
-      propertyPath: numberOfOils
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11436534, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
-      propertyPath: numberOfSpeedBoosts
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d3b0f4258008514d930e4c54ec84c7a, type: 2}
@@ -1125,7 +1109,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1158,6 +1142,14 @@ Prefab:
     - target: {fileID: 154804, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_Name
       value: PlayerWheel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: coolDownJump
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
@@ -1321,7 +1313,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 968356594}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c5f1e1496289dc24583443b2fcfff9ac, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1664,7 +1656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1717,6 +1709,18 @@ Prefab:
     - target: {fileID: 13634470, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: coolDownJump
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
@@ -1909,7 +1913,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1954,6 +1958,22 @@ Prefab:
     - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: buttonNameFire
       value: Fire1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13634470, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: coolDownJump
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
@@ -2124,7 +2144,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 468296, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2177,6 +2197,14 @@ Prefab:
     - target: {fileID: 13634470, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479694, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: coolDownJump
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
@@ -2430,7 +2458,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1685355380}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c5f1e1496289dc24583443b2fcfff9ac, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
