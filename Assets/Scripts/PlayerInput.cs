@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour {
     public float acceleration = 1;
     public string buttonName;
     public string buttonNameFire;
+    public string buttonNameJump;
     private bool stopMovingBool = true;
     public float angularVelocityFactor;
     public float coolDownJump = 1;
@@ -22,7 +23,7 @@ public class PlayerInput : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         Vector3 movement = new Vector3(speed, 0.0f, 0.0f);
         rb.velocity = movement;
-
+        timeElapsed = 100;
     }
 	
     void FixedUpdate()
@@ -54,7 +55,7 @@ public class PlayerInput : MonoBehaviour {
 
             rb.AddForce(movement);
 
-            if (Input.GetButtonDown(buttonNameFire) && timeElapsed > coolDownJump)
+            if (Input.GetButtonDown(buttonNameJump) && timeElapsed > coolDownJump)
             {
                 timeElapsed = 0;
                 //timeSinceLastJump = Time.time - timeElapsed;

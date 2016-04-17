@@ -1151,6 +1151,10 @@ Prefab:
       propertyPath: coolDownJump
       value: 0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameJump
+      value: Jump3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -1722,6 +1726,10 @@ Prefab:
       propertyPath: coolDownJump
       value: 0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameJump
+      value: Jump2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -1975,6 +1983,10 @@ Prefab:
       propertyPath: coolDownJump
       value: 0.85
       objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameJump
+      value: Jump1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
   m_IsPrefabParent: 0
@@ -2205,6 +2217,10 @@ Prefab:
     - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
       propertyPath: coolDownJump
       value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425504, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
+      propertyPath: buttonNameJump
+      value: Jump4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 344141d6fb1242c4582e6e75d6cfd6a9, type: 2}
